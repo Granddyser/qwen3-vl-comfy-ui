@@ -1,5 +1,5 @@
 [project]
-name = "qwen3-vl"
+name = "ComfyUI-Qwen3-VL"
 description = "Qwen3-VL in ComfyUI"
 version = "1.0.0"
 license = {file = "LICENSE"}
