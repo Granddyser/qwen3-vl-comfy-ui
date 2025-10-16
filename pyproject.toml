@@ -1,7 +1,7 @@
 [project]
 name = "ComfyUI-Qwen3-VL"
 description = "Qwen3-VL in ComfyUI"
-version = "1.0.1"
+version = "1.1.1"
 license = {file = "LICENSE"}
 dependencies = ["qwen-vl-utils", "qwen-vl-utils[decord]", "pathlib", "transformers>=4.49.0"]
 
@@ -12,4 +12,4 @@ Repository = "https://github.com/Granddyser/qwen3-vl-comfy-ui"
 [tool.comfy]
 PublisherId = "granddyser"
 DisplayName = "ComfyUI-Qwen3-VL"
-Icon = "https://raw.githubusercontent.com/Granddyser/qwen3-vl-comfy-ui/main/assets/icon.png"
+Icon = "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/qwen.png"
