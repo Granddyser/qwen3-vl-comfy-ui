@@ -1,0 +1,384 @@
+{
+  "id": "7041a766-f4c1-4715-a6c6-0632c47ad927",
+  "revision": 0,
+  "last_node_id": 7,
+  "last_link_id": 6,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "Qwen2_5_VL_Run",
+      "pos": [
+        700,
+        130
+      ],
+      "size": [
+        400,
+        316
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "Qwen2_5_VL_model",
+          "type": "QWEN2_5_VL_MODEL",
+          "link": 1
+        },
+        {
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "video",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": null
+        },
+        {
+          "name": "BatchImage",
+          "shape": 7,
+          "type": "BatchImage",
+          "link": 2
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            6
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "MakkiShizu/ComfyUI-Qwen2_5-VL",
+        "ver": "f42754ffc6de2b0bcc140486bbe63a51ea091987",
+        "Node name for S&R": "Qwen2_5_VL_Run"
+      },
+      "widgets_values": [
+        "描述这几张图片，是否有共同点？",
+        "torchvision",
+        512,
+        256,
+        1280,
+        20480,
+        98962365775577,
+        "randomize"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "DownloadAndLoadQwen2_5_VLModel",
+      "pos": [
+        200,
+        130
+      ],
+      "size": [
+        341.1880798339844,
+        106
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "Qwen2_5_VL_model",
+          "type": "QWEN2_5_VL_MODEL",
+          "links": [
+            1
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "MakkiShizu/ComfyUI-Qwen2_5-VL",
+        "ver": "f42754ffc6de2b0bcc140486bbe63a51ea091987",
+        "Node name for S&R": "DownloadAndLoadQwen2_5_VLModel"
+      },
+      "widgets_values": [
+        "Qwen/Qwen2.5-VL-3B-Instruct",
+        "8bit",
+        "sdpa"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "BatchImageLoaderToLocalFiles",
+      "pos": [
+        400,
+        330
+      ],
+      "size": [
+        236.01620483398438,
+        86
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "image1",
+          "name": "image1",
+          "type": "IMAGE",
+          "link": 3
+        },
+        {
+          "label": "image2",
+          "name": "image2",
+          "type": "IMAGE",
+          "link": 4
+        },
+        {
+          "label": "image3",
+          "name": "image3",
+          "type": "IMAGE",
+          "link": 5
+        },
+        {
+          "label": "image4",
+          "name": "image4",
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "BatchImage",
+          "type": "BatchImage",
+          "links": [
+            2
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "MakkiShizu/ComfyUI-Qwen2_5-VL",
+        "ver": "f42754ffc6de2b0bcc140486bbe63a51ea091987",
+        "Node name for S&R": "BatchImageLoaderToLocalFiles"
+      },
+      "widgets_values": [],
+      "_dynamicInputs": [
+        "image1",
+        "image2",
+        "image3",
+        "image4"
+      ]
+    },
+    {
+      "id": 4,
+      "type": "LoadImage",
+      "pos": [
+        -100,
+        130
+      ],
+      "size": [
+        270,
+        314.0000305175781
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            3
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.33",
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "1002 (1).webp",
+        "image"
+      ]
+    },
+    {
+      "id": 5,
+      "type": "LoadImage",
+      "pos": [
+        -100,
+        530
+      ],
+      "size": [
+        270,
+        314
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            4
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.33",
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "1144.webp",
+        "image"
+      ]
+    },
+    {
+      "id": 6,
+      "type": "LoadImage",
+      "pos": [
+        300,
+        530
+      ],
+      "size": [
+        270,
+        314
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            5
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.33",
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "129066964_p3.png",
+        "image"
+      ]
+    },
+    {
+      "id": 7,
+      "type": "ShowText|pysssss",
+      "pos": [
+        700,
+        530
+      ],
+      "size": [
+        400,
+        270
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 6
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "aac13aa7ce35b07d43633c3bbe654a38c00d74f5",
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "这三张图片中的角色都有以下共同点：\n\n1. **角色设计**：所有角色都是动漫风格的女性角色。\n2. **服装**：每个角色都穿着独特的服装。第一张图片中的角色穿着黑色的吊带和金色的腰封；第二张图片中的角色穿着白色的泳衣；第三张图片中的角色穿着黑色的连衣裙。\n3. **背景**：每个角色的背景都比较简洁，主要突出角色本身。\n\n这些共同点使得这三张图片在视觉上具有一定的相似性。"
+      ]
+    }
+  ],
+  "links": [
+    [
+      1,
+      2,
+      0,
+      1,
+      0,
+      "QWEN2_5_VL_MODEL"
+    ],
+    [
+      2,
+      3,
+      0,
+      1,
+      3,
+      "BatchImage"
+    ],
+    [
+      3,
+      4,
+      0,
+      3,
+      0,
+      "IMAGE"
+    ],
+    [
+      4,
+      5,
+      0,
+      3,
+      1,
+      "IMAGE"
+    ],
+    [
+      5,
+      6,
+      0,
+      3,
+      2,
+      "IMAGE"
+    ],
+    [
+      6,
+      1,
+      0,
+      7,
+      0,
+      "STRING"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "frontendVersion": "1.18.9",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}
