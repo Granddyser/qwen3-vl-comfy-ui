@@ -17,11 +17,6 @@ Supported input types:
 - Multi-image
 - Video
 
-### Key Differences from Qwen2.5-VL
-- Full Qwen3-VL compatibility (`Qwen/Qwen3-VL-*` series)
-- Better handling for image batches and temporary file management
-- Optional advanced chat node with system/user separation
-
 ---
 
 ## Installation
