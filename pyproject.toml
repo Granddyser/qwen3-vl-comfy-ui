@@ -1,7 +1,7 @@
 [project]
 name = "ComfyUI-Qwen3-VL"
 description = "Qwen3-VL in ComfyUI"
-version = "1.1.1"
+version = "1.2.1"
 license = {file = "LICENSE"}
 dependencies = ["qwen-vl-utils", "qwen-vl-utils[decord]", "pathlib", "transformers>=4.49.0"]
 

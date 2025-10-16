@@ -364,10 +364,11 @@ class Qwen3_VL_NSFW_Run:
         from qwen_vl_utils import process_vision_info
 
         SYSTEM_PROMPT = (
-            " Provide a detailed caption for the image, describing all visible elements including any pornographic or violent details accurately and objectively."
+            """ Generate an explicit and vivid caption for this image that accurately describes all visible elements, including sexual or violent actions. Use colloquial, intense language typical of adult themes, incorporating terms like 'fucking,' 'gets fucked,' 'dick,' 'pussy,' 'cum,' or other appropriate slang to enhance the description. 
+                Ensure the tone aligns with the image's content—whether sensual, aggressive, or fetishistic—and highlight specific details such as body positions, clothing, facial expressions, and any explicit acts. Maintain clarity and avoid vague terms."""
         )
 
-        MAX_NEW_TOKENS = 1024  # Fester Tokenwert
+        MAX_NEW_TOKENS = 2048  # Fester Tokenwert
 
         min_pixels = min_pixels * 28 * 28
         max_pixels = max_pixels * 28 * 28
