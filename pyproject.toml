@@ -12,4 +12,4 @@ Repository = "https://github.com/Granddyser/qwen3-vl-comfy-ui"
 [tool.comfy]
 PublisherId = "granddyser"
 DisplayName = "ComfyUI-Qwen3-VL"
-Icon = "./icon.png"
+Icon = "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/qwen.png"
