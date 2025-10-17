@@ -267,7 +267,11 @@ class Qwen3_VL_Run:
         image_inputs, video_inputs, video_kwargs = process_vision_info(
             messages, return_video_kwargs=True
         )
-
+        
+        if "videos_kwargs" in video_kwargs and video_kwargs["videos_kwargs"]:
+            if "fps" in video_kwargs["videos_kwargs"]:
+                video_kwargs["videos_kwargs"]["fps"] = float(video_kwargs["videos_kwargs"]["fps"])
+        
         inputs = processor(
             text=[modeltext],
             images=image_inputs,
@@ -364,7 +368,8 @@ class Qwen3_VL_NSFW_Run:
         from qwen_vl_utils import process_vision_info
 
         SYSTEM_PROMPT = (
-            """ Generate an explicit and vivid caption for this image that accurately describes all visible elements, including sexual or violent actions. Use colloquial, intense language typical of adult themes, incorporating terms like 'fucking,' 'gets fucked,' 'dick,' 'pussy,' 'cum,' or other appropriate slang to enhance the description. 
+            """ Generate an explicit and vivid caption for this image that accurately describes all visible elements, including sexual or violent actions. Use intense language typical of adult themes, incorporating terms like 'fucking,' 'gets fucked,' 'dick,' 'pussy,' 'cum,' or other appropriate words to the descripe.
+                But match the intensity of your description to what is actually shown, like porn-director or film-director. Don't sanitize explicit content, but also don't make innocent content sound more vulgar than it is.
                 Ensure the tone aligns with the image's content—whether sensual, aggressive, or fetishistic—and highlight specific details such as body positions, clothing, facial expressions, and any explicit acts. Maintain clarity and avoid vague terms."""
         )
 
@@ -609,6 +614,11 @@ class Qwen3_VL_Run_Advanced:
         image_inputs, video_inputs, video_kwargs = process_vision_info(
             messages, return_video_kwargs=True
         )
+        
+        if "videos_kwargs" in video_kwargs and video_kwargs["videos_kwargs"]:
+            if "fps" in video_kwargs["videos_kwargs"]:
+                video_kwargs["videos_kwargs"]["fps"] = float(video_kwargs["videos_kwargs"]["fps"])
+        
 
         inputs = processor(
             text=[modeltext],
