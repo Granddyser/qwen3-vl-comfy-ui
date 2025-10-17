@@ -1,7 +1,7 @@
 [project]
 name = "qwen3-vl-nsfw"
 description = "Native Qwen3-VL integration for ComfyUI with image/video analysis and uncensored model support."
-version = "1.0.0"
+version = "1.2.2"
 license = {file = "LICENSE"}
 dependencies = [
     "qwen-vl-utils",
@@ -9,12 +9,17 @@ dependencies = [
     "transformers>=4.49.0"
 ]
 
+dynamic = ["dependencies"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
 [project.urls]
 Repository = "https://github.com/Granddyser/qwen3-vl-comfy-ui"
 "Bug Tracker" = "https://github.com/Granddyser/qwen3-vl-comfy-ui/issues"
 
 [tool.comfy]
 PublisherId = "granddyser"
-DisplayName = "ComfyUI-Qwen3-VL-nsfw"
+DisplayName = "Qwen3-VL-nsfw"
 Icon = "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/qwen.png"
 requires-comfyui = ">=1.0.0"
