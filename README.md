@@ -2,8 +2,8 @@
 
 ## 🆕 Update Log
 
-### v1.0.2 (2025-10-16)
-- ✨ Added **Qwen3_VL_NSFW_Run** node  
+### v1.2.2 
+- ✨ Added **Qwen3_VL_NSFW_Run** node with video support 
   → 🔞 NSFW captioning and analysis support  
   → 📁 Category: `Qwen3-VL_NSFW`
 
