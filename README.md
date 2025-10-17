@@ -1,12 +1,11 @@
-# 🎨 Qwen3-VL for ComfyUI
+# 🔥 Qwen3-VL Uncensored | ComfyUI Integration 🔞
 
 ## 🆕 Update Log
 
 ### v1.2.2 
 - ✨ Added **Qwen3_VL_NSFW_Run** node with video support 
   → 🔞 NSFW captioning and analysis support  
-  → 📁 Category: `Qwen3-VL_NSFW`
-
+  
 ---
 
 This project is **inspired by and based on prior work** from [makki-shizu](https://github.com/MakkiShizu/), who originally implemented the **Qwen2.5-VL** nodes.  
