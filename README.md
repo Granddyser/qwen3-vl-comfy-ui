@@ -4,6 +4,7 @@
 
 ### v1.2.3
 Fixed an issue where internal reasoning tags appeared, and added support for alternative models
+(The non-reasoning model is recommended)
 
 ### v1.2.2 
 - ✨ Added **Qwen3_VL_NSFW_Run** node with video support 
@@ -37,4 +38,5 @@ Install the required dependencies:
 ```bash
 pip install -r requirements.txt
 ```
+
 
