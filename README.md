@@ -38,5 +38,14 @@ Install the required dependencies:
 ```bash
 pip install -r requirements.txt
 ```
+Linux
+```bash
+pip install qwen-vl-utils --break-system-packages
+```
+Windows
+```bash
+pip install qwen-vl-utils 
+```
+
 
 
