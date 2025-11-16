@@ -88,8 +88,11 @@ class DownloadAndLoadQwen3_VL_NSFW_Model:
         return {
             "required": {
                 "model": (
-                    ["prithivMLmods/Qwen3-VL-4B-Thinking-abliterated"],
-                    {"default": "prithivMLmods/Qwen3-VL-4B-Thinking-abliterated"},
+                    ["prithivMLmods/Qwen3-VL-4B-Thinking-abliterated",
+                     "prithivMLmods/Qwen3-VL-4B-Instruct-abliterated-v1",
+                     "prithivMLmods/Qwen3-VL-8B-Instruct-abliterated-v2",
+                     ],
+                    {"default": "prithivMLmods/Qwen3-VL-4B-Instruct-abliterated-v1"},
                 ),
                 "quantization": (["none", "4bit", "8bit"], {"default": "8bit"}),
                 "attention": (["flash_attention_2", "sdpa", "eager"], {"default": "sdpa"}),
