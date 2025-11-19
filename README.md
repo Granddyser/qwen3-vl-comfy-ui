@@ -65,8 +65,8 @@ Add modifiers to any caption type via checkboxes in the `optional` tab:
 - No artist/title attribution
 
 **Special Output Formats:**
-- **Format as image generation prompt** - Output optimized for Stable Diffusion/MidJourney/DALL-E (flowing text, no special characters, quality tags)
-- **Describe as video continuation** - Instead of describing the static image, describe how the scene would evolve as a video (optimized for Runway/Sora/Pika image-to-video generation)
+- **Format as image generation prompt** - Output optimized for Stable Diffusion/Flux/Qwen-Image (flowing text, no special characters, quality tags)
+- **Describe as video continuation** - Instead of describing the static image, describe how the scene would evolve as a video (optimized for Wan image-to-video generation)
 
 #### Editable System Prompt
 Customize the model's behavior with your own system prompt. Default:
@@ -131,6 +131,7 @@ Windows
 ```bash
 pip install qwen-vl-utils 
 ```
+
 
 
 
