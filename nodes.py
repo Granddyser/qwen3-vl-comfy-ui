@@ -480,6 +480,7 @@ class Qwen3_VL_NSFW_Run:
                 "opt_no_meta_phrases": ("BOOLEAN", {"default": False, "label_on": "No 'This image shows...' etc.", "label_off": "Can use meta phrases"}),
                 "opt_image_prompt_format": ("BOOLEAN", {"default": False, "label_on": "Format as image generation prompt", "label_off": "Normal description"}),
                 "opt_video_continuation": ("BOOLEAN", {"default": False, "label_on": "image to video continuation prompt", "label_off": "Describe static image"}),
+                "opt_wan_video": ("BOOLEAN", {"default": False, "label_on": "for wan-video models", "label_off": "universal"}),
             },
             "required": {
                 # ============ JoyCaption-Style Controls ============
@@ -597,6 +598,7 @@ class Qwen3_VL_NSFW_Run:
         opt_no_meta_phrases=False,
         opt_image_prompt_format=False,
         opt_video_continuation=False,
+        opt_wan_video=False,
     ):
         import re
         from qwen_vl_utils import process_vision_info
@@ -630,7 +632,9 @@ class Qwen3_VL_NSFW_Run:
             "Your response will be used by a text-to-image model, so avoid useless meta phrases like 'This image shows…', 'You are looking at...', etc.": opt_no_meta_phrases,
             "Format your response as an optimized text-to-image generation prompt. Use flowing descriptive text without special characters, bullets, or lists. Follow best practices for image generation prompts: clear subject description, style keywords, lighting and mood descriptors, quality tags, and technical parameters. Keep it as a single cohesive paragraph optimized for models like Stable Diffusion, MidJourney, or DALL-E.": opt_image_prompt_format,
             "Describe what is currently visible in the image, describe how this scene would continue ,strictly non narrative and strictly descriptive only,  and evolve if it were a video as an image to video prompt without any audio discription. Focus on the natural progression of action, movement, and dynamics that would follow this moment. Describe what happens next, which and how subjects move, camera motion, scene transitions, and the temporal flow. Treat this as an image-to-video generation task - predict the continuation, not the static frame.": opt_video_continuation,
-            }
+             "Format your response as a prompt for WAN 2.1, following this structure: [Main subject], [Detailed description of appearance], [Action or ongoing movement], [Environment or setting], [Lighting and atmosphere], [Visual style or genre], [Camera movement or angle], [Additional scene details]. Clearly describe what happens over time and specify camera motion or transitions. Add a negative prompt at the end to exclude unwanted elements or styles. Avoid lists, meta phrases, or special characters. Output a single, cohesive paragraph.": opt_wan_video,
+  
+           }
 
         # Build the user prompt using JoyCaption style
         user_prompt = build_prompt(caption_type, caption_length, extra_options_dict, custom_prompt)
