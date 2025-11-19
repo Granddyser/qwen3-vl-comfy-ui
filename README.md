@@ -2,11 +2,14 @@
 
 ## 🆕 Update Log
 
-### Version 1.3.1 - Add two foot-fetish styles
+### Version 1.3.1 - Add two foot-fetish-styles + Wan-Video-style
 
 ####  👣  Foot-fetish-light
 
 #### 💦🦶 Foot-fetish 
+
+####  📹  Wan-video-template format
+
 
 ### Version 1.3.0 - JoyCaption-Style Flexible Prompt System
 
@@ -137,6 +140,7 @@ Windows
 ```bash
 pip install qwen-vl-utils 
 ```
+
 
 
 
