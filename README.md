@@ -2,6 +2,12 @@
 
 ## 🆕 Update Log
 
+### Version 1.3.1 - Add two foot-fetish styles
+
+####  👣  Foot-fetish-light
+
+#### 💦🦶 Foot-fetish 
+
 ### Version 1.3.0 - JoyCaption-Style Flexible Prompt System
 
 #### 🎉 Major Update: Complete Prompt Overhaul
@@ -131,6 +137,7 @@ Windows
 ```bash
 pip install qwen-vl-utils 
 ```
+
 
 
 
