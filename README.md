@@ -4,16 +4,16 @@
 
 ### Version 1.3.1 - Add two foot-fetish-styles + Wan-Video-style
 
-####  👣  Foot-fetish-light
+**👣**  Foot-fetish-light
 
-#### 💦🦶 Foot-fetish 
+**💦**🦶 Foot-fetish 
 
-####  📹  Wan-video-template format
+**📹**  Wan-video-template format
 
 
 ### Version 1.3.0 - JoyCaption-Style Flexible Prompt System
 
-#### 🎉 Major Update: Complete Prompt Overhaul
+*🎉* Major Update: Complete Prompt Overhaul
 
 Based on community feedback and inspired by [JoyCaption](https://huggingface.co/spaces/fancyfeast/joy-caption-beta-one), this release completely reimagines how you interact with Qwen3-VL models.
 
@@ -140,6 +140,7 @@ Windows
 ```bash
 pip install qwen-vl-utils 
 ```
+
 
 
 
