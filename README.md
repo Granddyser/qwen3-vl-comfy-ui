@@ -2,6 +2,23 @@
 
 ## 🆕 Update Log
 
+### Version 1.4.0 - Next Scene Cinematic Continuation
+
+**🎬 Next Scene Mode** - Intelligent cinematic frame-to-frame continuation system
+
+New Features:
+- **opt_next_scene** toggle - Enable Next-Scene LoRA prompt generation
+- **qwen_next_scene** field - Optional user guidance (empty = creative AI mode)
+- **Creative Mode** - Model invents logical cinematic continuation based on image analysis
+- **User-Guided Mode** - Transform user instructions into cinematic prompts
+- Automatic "Next Scene: " prefix formatting for LoRA compatibility
+- Camera movement suggestions (dolly, pan, tilt, crane, orbit)
+- Environmental evolution (lighting shifts, weather, time progression)
+- Perfect for seamless video generation workflows with WAN-Video-Extender
+
+*Optimized for use with the [Next-Scene LoRA](https://huggingface.co/lovis93/next-scene-qwen-image-lora-2509) for Qwen-Image-Edit.*
+
+
 ### Version 1.3.1 - Add two foot-fetish-styles + Wan-Video-style
 
 **👣**  Foot-fetish-light
@@ -141,6 +158,13 @@ Windows
 pip install qwen-vl-utils 
 ```
 
+## ☕ Support the Project
+
+Building optimized tools requires deep dives and long hours. I build this because I believe in pushing the boundaries of what's possible locally. If you share that vision, your support helps bridge the gap between a rough experiment and a polished tool for everyone.
+
+<a href="https://www.buymeacoffee.com/granddyser">
+  <img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me a Coffee" />
+</a>
 
 
 
