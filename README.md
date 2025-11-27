@@ -2,6 +2,20 @@
 
 ## 🆕 Update Log
 
+## Version 1.5.0 
+
+## 🚀 Latest Update: Unified Node & Enhanced Features
+* **Unified Qwen3-VL Run Node:** Replaced separate nodes with a single, powerful node handling all tasks (Captioning, Chat, Analysis).
+* **JoyCaption Integration:** Added built-in presets for various styles: *Descriptive, Danbooru/e621 tags, Art Critic, Social Media, NSFW,* and more.
+* **Next Scene Generation:** dedicated mode to generate cinematic "Next Scene" prompts optimized for video generation (WAN, Luma, etc.).
+* **New Model Support:** Added support for **Abliterated (Uncensored)** and **Thinking** Qwen3-VL models.
+* **Batch & Loop Support:** New `Folder Loader` and `Batch Info` nodes to easily process image folders in loops.
+(Batch Run example-workflow included)
+
+
+**⚠️ IMPORTANT WARNING:**
+It is highly recommended to use a **dedicated folder** for this workflow. The node will process **every single image** found in the specified path. Do not use a general directory (like your generic Downloads or Pictures folder) unless you intend to process all files within it.
+
 ### Version 1.4.0 - Next Scene Cinematic Continuation
 
 **🎬 Next Scene Mode** - Intelligent cinematic frame-to-frame continuation system
