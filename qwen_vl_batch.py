@@ -462,6 +462,7 @@ class Qwen3VL_Run:
             do_sample=False,
             temperature=0.0,
             top_p=1.0,
+            repetition_penalty=1.0
         )
         
         generated_ids_trimmed = [out_ids[len(in_ids):] for in_ids, out_ids in zip(inputs.input_ids, generated_ids)]

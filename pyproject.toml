@@ -1,7 +1,7 @@
 [project]
 name = "qwen3-vl-nsfw"
 description = "Native Qwen3-VL integration for ComfyUI with image/video analysis and uncensored model support.uilt-in presets for various styles: *Descriptive, Danbooru/e621 tags, Art Critic, Social Media, NSFW,* Batch & Loop Support,Next Scene Generation,JoyCaption Integration"
-version = "1.5.2"
+version = "1.5.3"
 license = {file = "LICENSE"}
 dependencies = [
     "qwen-vl-utils",
