@@ -2,6 +2,9 @@
 
 ## 🆕 Update Log
 
+### Version 1.5.7
+* minor bug-fix
+
 ### Version 1.5.6
 * Custom Models: To use custom models, simply download the full model directory and place it inside ComfyUI/models/VLM.
 
