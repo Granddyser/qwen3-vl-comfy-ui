@@ -1,5 +1,5 @@
 [project]
-name = "qwen3-vl-nsfw"
+name = "Qwen3-VL Image caption custom nodes"
 description = "Native Qwen3-VL integration for ComfyUI with image/video analysis and uncensored model support.uilt-in presets for various styles: *Descriptive, Danbooru/e621 tags, Art Critic, Social Media, NSFW,* Batch & Loop Support,Next Scene Generation,JoyCaption Integration"
 version = "1.5.3"
 license = {file = "LICENSE"}
