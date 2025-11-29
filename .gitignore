@@ -1,4 +1,6 @@
-__pycache__
-js/
-archiv/
-node.zip
+**/__pycache__/
+**/js/
+**/archiv/
+**/node.zip
+.DS_Store
+Thumbs.db
