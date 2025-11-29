@@ -2,6 +2,9 @@
 
 ## 🆕 Update Log
 
+### Version 1.5.2
+* flux2-prompt
+
 ## Version 1.5.0 
 
 ## 🚀 Latest Update: Unified Node & Enhanced Features
@@ -179,6 +182,7 @@ Building optimized tools requires deep dives and long hours. I build this becaus
 <a href="https://www.buymeacoffee.com/granddyser">
   <img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me a Coffee" />
 </a>
+
 
 
 
