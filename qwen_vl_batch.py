@@ -117,6 +117,37 @@ CAPTION_TYPE_MAP = {
         "Describe video continuation in {word_count} words or less.",
         "Describe a {length} video continuation.",
     ],
+    # ===== FLUX.2 Prompt Styles =====
+    "FLUX.2 Prompt": [
+        "You are a FLUX.2 image generation prompt expert. Analyze this image and create an optimized FLUX.2 prompt following this exact structure: Subject + Action + Style + Context. Rules: 1) Start with the most important element (main subject). 2) Use confident, definite language - describe what IS there, never what isn't. 3) No negative prompts or 'no/without/avoid' phrases - FLUX.2 doesn't support negatives. 4) Be specific with colors, materials, textures. 5) Include lighting and mood as context. Output ONLY the prompt text, no explanations.",
+        "Create a FLUX.2 prompt for this image in {word_count} words or less. Structure: Subject + Action + Style + Context. No negatives.",
+        "Create a {length} FLUX.2 prompt for this image. Structure: Subject + Action + Style + Context. No negatives.",
+    ],
+    "FLUX.2 Photorealistic": [
+        "You are a FLUX.2 photorealism prompt expert. Analyze this image and create a photorealistic FLUX.2 prompt. Include: 1) Main subject with specific details. 2) Camera specification (e.g., 'shot on Sony A7IV', 'Canon 5D Mark IV', 'Hasselblad X2D'). 3) Lens and aperture (e.g., '85mm lens, f/2.8', '35mm f/1.4'). 4) Lighting conditions (golden hour, studio softbox, natural window light). 5) Film stock or style if applicable (e.g., 'Kodak Portra 400', 'clean digital'). Structure: Subject, camera/lens specs, lighting, mood. Output ONLY the prompt, no explanations.",
+        "Create a photorealistic FLUX.2 prompt in {word_count} words. Include camera, lens, and lighting specs.",
+        "Create a {length} photorealistic FLUX.2 prompt. Include camera, lens, and lighting specifications.",
+    ],
+    "FLUX.2 Product/Commercial": [
+        "You are a FLUX.2 commercial photography prompt expert. Analyze this image and create a product/commercial photography prompt. Include: 1) Product/subject with precise details. 2) Background and surface description. 3) Professional lighting setup (three-point, softbox, rim light). 4) Color palette with HEX codes if colors are prominent (format: 'color #RRGGBB'). 5) Composition and camera angle. 6) Style keywords (minimalist, luxury, editorial). Output ONLY the prompt text.",
+        "Create a FLUX.2 commercial prompt in {word_count} words. Include lighting and color details.",
+        "Create a {length} FLUX.2 commercial/product prompt with professional specifications.",
+    ],
+    "FLUX.2 JSON Structured": [
+        'You are a FLUX.2 JSON prompt generator. Analyze this image and output a structured JSON prompt for maximum control. Use this exact schema:\n{"scene": "overall description", "subjects": [{"description": "subject details", "position": "location in frame", "action": "what they do"}], "style": "artistic style", "lighting": "lighting description", "mood": "emotional tone", "background": "background details", "camera": {"angle": "camera angle", "lens": "lens type", "depth_of_field": "focus behavior"}}\nInclude color_palette with HEX codes if specific colors are prominent. Output ONLY valid JSON, no markdown, no explanations.',
+        'Generate a FLUX.2 JSON prompt for this image. Keep descriptions concise, total under {word_count} words.',
+        'Generate a {length} FLUX.2 JSON structured prompt for this image.',
+    ],
+    "FLUX.2 Typography/Design": [
+        "You are a FLUX.2 typography and design prompt expert. Analyze this image and create a prompt optimized for text rendering and design elements. Include: 1) Any visible text in quotes (e.g., \"OPEN\" in red neon). 2) Font style description (serif, sans-serif, handwritten, bold). 3) Text placement and size. 4) Design style (minimalist, vintage, editorial, poster). 5) Color scheme with HEX codes for brand consistency. 6) Layout composition. FLUX.2 renders text best when you use quotation marks and specify placement clearly. Output ONLY the prompt.",
+        "Create a FLUX.2 typography prompt in {word_count} words. Quote any text, specify fonts and colors.",
+        "Create a {length} FLUX.2 design/typography prompt with text specifications.",
+    ],
+    "FLUX.2 Vintage/Era": [
+        "You are a FLUX.2 vintage photography prompt expert. Analyze this image and determine the photographic era or style, then create an era-specific prompt. Include: 1) Era identification (80s vintage, 2000s digicam, analog film, Polaroid). 2) Appropriate camera/film references (e.g., 'expired Kodak Ektachrome', 'early digital camera'). 3) Era-specific characteristics (film grain, color cast, flash artifacts, noise). 4) Subject with period-appropriate styling. 5) Mood and atmosphere. Example styles: '80s vintage photo, warm color cast, soft focus, film grain' or '2000s digicam, slight noise, flash photography, candid'. Output ONLY the prompt.",
+        "Create a FLUX.2 vintage-style prompt in {word_count} words. Specify era and film characteristics.",
+        "Create a {length} FLUX.2 vintage/era-specific prompt with period-accurate details.",
+    ],
 }
 
 

@@ -1,7 +1,7 @@
 [project]
 name = "qwen3-vl-nsfw"
 description = "Native Qwen3-VL integration for ComfyUI with image/video analysis and uncensored model support.uilt-in presets for various styles: *Descriptive, Danbooru/e621 tags, Art Critic, Social Media, NSFW,* Batch & Loop Support,Next Scene Generation,JoyCaption Integration"
-version = "1.5.1"
+version = "1.5.2"
 license = {file = "LICENSE"}
 dependencies = [
     "qwen-vl-utils",
@@ -20,6 +20,6 @@ Repository = "https://github.com/Granddyser/qwen3-vl-comfy-ui"
 
 [tool.comfy]
 PublisherId = "granddyser"
-DisplayName = "Qwen3-VL-nsfw"
+DisplayName = "Qwen3-VL Image caption custom nodes"
 Icon = "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/qwen.png"
 requires-comfyui = ">=1.0.0"
