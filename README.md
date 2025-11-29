@@ -3,6 +3,9 @@
 ## 🆕 Update Log
 
 ### Version 1.5.3
+* Custom Models: To use custom models, simply download the full model directory and place it inside ComfyUI/models/VLM.
+
+### Version 1.5.3
 * flux2-prompt
 * fixed missing "repetition penalty"
 ## Version 1.5.0 

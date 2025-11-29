@@ -52,6 +52,22 @@ AVAILABLE_MODELS = [
     "prithivMLmods/Qwen3-VL-4B-Thinking-abliterated",
     "prithivMLmods/Qwen3-VL-8B-Instruct-abliterated-v2",
 ]
+try:
+    
+    if os.path.exists(model_directory):
+        local_items = os.listdir(model_directory)
+        for item in local_items:
+            full_path = os.path.join(model_directory, item)
+            
+            if os.path.isdir(full_path):
+                
+                is_listed = any(model.endswith(item) for model in AVAILABLE_MODELS)
+                
+                if not is_listed:
+                    AVAILABLE_MODELS.append(item)
+                    print(f"🔍 Custom Local Model found: {item}")
+except Exception as e:
+    print(f"⚠️ Error scanning local models: {e}")
 
 
 # ============================================================================
