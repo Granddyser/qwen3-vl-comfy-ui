@@ -2,6 +2,9 @@
 
 ## 🆕 Update Log
 
+### Version 1.5.8
+* Clean VRAM management
+
 ### Version 1.5.7
 * minor bug-fix
 
